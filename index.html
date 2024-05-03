@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM-Event-Practice1</title>
+
+</head>
+
+<body>
+
+  <button onclick="alert('Do you want to edit ?')">Make Alert</button>
+  <button onclick="prompt('Edit the revised comment ?')">Make Prompt</button>
+  <button onclick="confirm('Do you want to post it ?')">Make Confirm</button>
+  <button id="make-red">Make Red</button>
+  <button onclick="yellowColor()">Make Yellow</button>
+  <button onclick="greenColor()">Make Green</button>
+  <button id="make-blue">Make Blue</button>
+
+
+  <!-- Method-1 -->
+  <script>
+    function greenColor() {
+      // console.log('green clicked'{)};
+      //1. When anybody will click the <button>, 2. onclick= "" event will fire, 3. it will pick greenColor() 4. then it will come to the function greenColor(){} statement in the script, 5. then it will pick the DOMImplementation i.e. document.body.style.backgroundColor = = 'green';
+      document.body.style.backgroundColor = 'green';
+    }
+  </script>
+
+
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
